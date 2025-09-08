@@ -11,7 +11,7 @@ st.markdown("Enter a BYU catalog program URL below to extract program and course
 url = st.text_input("BYU Catalog Program URL", "https://catalog.byu.edu/programs/34250")
 
 # Button to trigger scraping
-if st.button("Scrape Outcomes"):
+if st.button("Compile Outcomes"):
     output_file = "outcomes.txt"
 
     try:
@@ -27,3 +27,4 @@ if st.button("Scrape Outcomes"):
 
     except Exception as e:
         st.error(f"❌ Error: {e}")
+
