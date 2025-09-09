@@ -4,7 +4,7 @@ from pathlib import Path
 
 st.set_page_config(page_title="BYU Catalog Scraper", layout="centered")
 
-st.title("📘 BYU Catalog Compiler")
+st.title("📘 BYU Learning Outcome Compiler")
 st.markdown("Enter a BYU catalog program URL below to compile program and course outcomes.")
 
 # Input field
@@ -27,6 +27,7 @@ if st.button("Compile Outcomes"):
 
     except Exception as e:
         st.error(f"❌ Error: {e}")
+
 
 
 
